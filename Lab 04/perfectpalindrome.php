@@ -14,8 +14,8 @@
             $str = $_POST["word"];
             $pattern = "/^[A-Za-z ]+$/";
             if (preg_match($pattern, $str)) {
-                $str1 = $strtolower($str);
-                $str2 = $strrev($str1);
+                $str1 = strtolower($str);
+                $str2 = strrev($str1);
                 if ($str2 == $str1) {
                     echo "<p>The text you entered '", $str, "' is a perfect palindrome!";
                 } else {
