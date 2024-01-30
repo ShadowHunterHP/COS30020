@@ -12,11 +12,11 @@
     <?php
         if (isset ($_POST["string"])) {
             $str = $_POST["string"];
-            $pattern = "/^[A-Za-z\p{P} ]+$/";
+            $pattern = "/^[\p{P}A-Za-z ]+$/";
             if (preg_match($pattern, $str)) {
-                $strnopunc = str_replace('\p{P}',"", $str);
-                $trimstr = str_replace(" ","", $strnopunc);
-                $str1 = strtolower($strnopunc);
+                $strnopunc = str_replace(["?","!",",",";","'"], '', $str);
+                $trimstr = str_replace(' ', '', $strnopunc);;
+                $str1 = strtolower($trimstr);
                 $str2 = strrev($str1);
                 if ($str2 == $str1) {
                     echo "<p>The text you entered '", $str, "' is a standard palindrome!";
