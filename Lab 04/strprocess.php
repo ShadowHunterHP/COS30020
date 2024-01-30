@@ -18,7 +18,7 @@
                 $len = strlen($str);
             for ($i = 0; $i < $len; $i++) {
                 $letter = substr ($str, $i, 1);
-                if ((strpos ("AEIOUaeiou", $i)) === false){
+                if ((strpos ("AEIOUaeiou", $letter)) === false){
                     $ans = $ans . $letter;
                 }
             }
