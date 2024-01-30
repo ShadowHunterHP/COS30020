@@ -15,6 +15,7 @@
             $pattern = "/^[A-Za-z\p{P} ]+$/";
             if (preg_match($pattern, $str)) {
                 $strnopunc = str_replace('\p{P}',"", $str);
+                $trimstr = str_replace(" ","", $strnopunc);
                 $str1 = strtolower($strnopunc);
                 $str2 = strrev($str1);
                 if ($str2 == $str1) {
