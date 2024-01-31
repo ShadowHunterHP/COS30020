@@ -7,7 +7,7 @@
 </head>
 <body>
     <form action="iseven.php" method="get">
-        Enter text: <input type="text" name="text"><br>
+        Enter text: <input type="text" name="number"><br>
         <input type="submit" value="Submit">
     </form>
 </body>
