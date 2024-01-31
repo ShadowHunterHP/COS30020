@@ -14,7 +14,7 @@
             $str = $_POST["string"];
             $pattern = "/^[\p{P}A-Za-z ]+$/";
             if (preg_match($pattern, $str)) {
-                $strnopunc = str_replace(["?","!",",",";","'"], '', $str);
+                $strnopunc = str_replace(["?","!",",",";","'","\""], '', $str);
                 $trimstr = str_replace(' ', '', $strnopunc);;
                 $str1 = strtolower($trimstr);
                 $str2 = strrev($str1);
