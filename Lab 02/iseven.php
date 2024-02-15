@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        $value = $_GET['text'];
+        $value = $_GET['number'];
         //$value = (4);
         ($number = (is_numeric($value)))?
             $number = $value : $result = "is not a number";
