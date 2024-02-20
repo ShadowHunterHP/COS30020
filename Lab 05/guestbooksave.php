@@ -12,7 +12,7 @@
         if ((isset($_POST["fname"])) && (isset($_POST["lname"]))) {
             $fname = $_POST["fname"];
             $lname = $_POST["lname"];
-            $filename = "../../data/lab05/guestbook.txt";
+            $filename = "../../data/guestbook.txt";
             umask(0007);
             $dir = "../../data/lab05";
         if (!file_exists($dir)) {
