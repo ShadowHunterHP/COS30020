@@ -1,0 +1,144 @@
+html, body {
+	min-height: 100%;
+	background-color: #1E5128;
+}
+
+body, form, input, textarea, label { 
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #D8E9A8;
+	line-height: 22px;
+}
+
+h1 {
+	line-height: 45px;
+	font-size: 45px;
+	color: #D8E9A8;
+	text-align: center;
+}
+
+.frame {
+	width: 50%;
+	background: #191A19;
+	border: 5px solid #D8E9A8;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+}
+
+form {
+	width: 30%;
+	padding: 40px;
+	border-radius: 6px;
+	background: #191A19;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+input,	textarea {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border: 1px solid #1E5128;
+	border-radius: 3px;
+	color: #1E5128;
+	background-color: #D8E9A8;
+}
+	
+textarea {
+	width: 30%;
+	padding: 5px;
+}
+
+input[type="radio"] {
+	position: relative;
+	display: inline-block;
+	margin: 10px 20px 15px 0;
+}
+
+input[type="submit"], input[type="reset"] {
+	background-color: #D8E9A8;
+	color: #191A19;
+	border: none;
+	text-decoration: none;
+	padding: 8px 8px;
+	margin: 4px 4px;
+}
+		
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.scissors {
+	color: #D8E9A8;
+	margin-right: 10px;
+}
+
+.line {
+	flex-grow: 1;
+	border: none;
+	border-top: 2px dashed #D8E9A8;
+	background: #191A19;
+}
+	
+a:link, a:visited {
+	background-color: #D8E9A8;
+	color: #191A19;
+	border: 2px solid #D8E9A8;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover, a:active {
+	background-color: #1E5128;
+	color: #D8E9A8;
+}
+
+.card {
+	background-color: #191A19;
+	box-shadow: 5px 5px 0 rgba(78,159,61,1);
+	transition: 0.5s;
+	width: 40%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 12px 12px;
+}
+
+.card:hover {
+	box-shadow: 10px 10px 0 rgba(216,233,168,1);
+}
+
+.card span {
+	font-weight:bold;
+	text-decoration: underline;
+}
+
+.error_box {
+	background-color: #FA7070;
+	color: #191A19;
+	width: 40%;
+	padding: 12px 12px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+
+.error_box p {
+	color: white;
+	font-weight:bold;
+}
+
+.error {
+	color: #FA7070;
+	font-weight:bold;
+}
