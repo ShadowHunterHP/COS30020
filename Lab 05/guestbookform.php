@@ -16,6 +16,6 @@
             <input type="submit" value="Submit">
         </fieldset>
     </form>
-    <a href="#">Show Guest Book</a>
+    <a href="guestbookshow.php">Show Guest Book</a>
 </body>
 </html>
