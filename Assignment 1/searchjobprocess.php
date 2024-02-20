@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-		<meta name="description" content="A Sorrowful Job Posting System" />
+		<meta name="description" content="A Job Posting System" />
 		<meta name="keywords" content="HTML, CSS, PHP" />
-		<meta name="author" content="An Average Man From The Earth"  />
+		<meta name="author" content="A Normal Normie"  />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"  />
         <link href="styles/style.css" rel="stylesheet"  />

@@ -1,6 +1,7 @@
 html, body {
 	min-height: 100%;
-	background-color: #1E5128;
+	background-color: #727272;
+	background-image: repeating-linear-gradient(-45deg, #6a6a6a 0, #6a6a6a 2px, #727272 2px, #727272 11px);
 }
 
 body, form, input, textarea, label { 
@@ -8,21 +9,21 @@ body, form, input, textarea, label {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
-	color: #D8E9A8;
+	color: black;
 	line-height: 22px;
 }
 
 h1 {
 	line-height: 45px;
 	font-size: 45px;
-	color: #D8E9A8;
+	color: #ce0e0e;
 	text-align: center;
 }
 
 .frame {
-	width: 50%;
-	background: #191A19;
-	border: 5px solid #D8E9A8;
+	width: 80%;
+	background: #ffffff;
+	border: 5px solid #ce0e0e;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -34,7 +35,7 @@ form {
 	width: 30%;
 	padding: 40px;
 	border-radius: 6px;
-	background: #191A19;
+	background: #ffffff;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -46,7 +47,7 @@ input,	textarea {
 	border: 1px solid #1E5128;
 	border-radius: 3px;
 	color: #1E5128;
-	background-color: #D8E9A8;
+	background-color: #e9ebe4;
 }
 	
 textarea {
@@ -61,7 +62,7 @@ input[type="radio"] {
 }
 
 input[type="submit"], input[type="reset"] {
-	background-color: #D8E9A8;
+	background-color: #e9ebe4;
 	color: #191A19;
 	border: none;
 	text-decoration: none;
@@ -76,21 +77,21 @@ input[type="submit"], input[type="reset"] {
 }
 
 .scissors {
-	color: #D8E9A8;
+	color: #000000;
 	margin-right: 10px;
 }
 
 .line {
 	flex-grow: 1;
 	border: none;
-	border-top: 2px dashed #D8E9A8;
+	border-top: 2px dashed #eeff00;
 	background: #191A19;
 }
 	
 a:link, a:visited {
-	background-color: #D8E9A8;
-	color: #191A19;
-	border: 2px solid #D8E9A8;
+	background-color: #3230af;
+	color: white;
+	border: 2px solid #3230af;
 	padding: 10px 20px;
 	text-align: center;
 	text-decoration: none;
@@ -98,7 +99,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-	background-color: #1E5128;
+	background-color: rgb(9, 10, 59);
 	color: #D8E9A8;
 }
 
@@ -141,4 +142,11 @@ a:hover, a:active {
 .error {
 	color: #FA7070;
 	font-weight:bold;
+}
+
+.post-h1 {
+	background-color: rgb(212, 209, 10);
+	padding: 10px;
+	margin-left: 5cm;
+	margin-right: 5cm;
 }

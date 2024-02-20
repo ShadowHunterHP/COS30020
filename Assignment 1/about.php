@@ -2,17 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-		<meta name="description" content="A Sorrowful Job Posting System" />
+		<meta name="description" content="A Job Posting System" />
 		<meta name="keywords" content="HTML, CSS, PHP" />
-		<meta name="author" content="An Average Man From The Earth"  />
+		<meta name="author" content="A Normal Normie"  />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"  />
         <link href="styles/style.css" rel="stylesheet"  />
-        <title>My Humble Achievements</title>
+        <title>About This Assignments</title>
 	</head>
 	<body>
 		<div class="frame">
-			<h1>A Modest About Page</h1>
+			<h1>About Me</h1>
 			
 			<ul>
 				<li>The PHP version installed in Mercury is:
@@ -38,9 +38,9 @@
 					</ul>
 				</li>
 				<li>Discussion points I participated on 
-				in the unit’s discussion board for Assignment 1:
+				in the unit's discussion board for Assignment 1:
 					<ul>
-						<li>I regretfully didn't participate in the unit's discussion board
+						<li>Regretfully, I didn't participate in the unit's discussion board
 						as I had the opportunity to seek guidance from my teacher during the labs' sessions.</li>
 					</ul>
 				</li>
