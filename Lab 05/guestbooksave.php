@@ -6,13 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Lab 05 Task 2 - Guest Book</h1>
+    <hr>
     <?php
-        if ((isset($_POST["fname"])) && (isset($_POST["lname"]))) {
-            $fname = $_POST["fname"];
-            $lname = $_POST["lname"];
-            $filename = "../../data/guestbook.txt";
-            umask(0007);
-            $dir = "../../data/lab05";
+    if ((isset($_POST["fname"])) && (isset($_POST["lname"]))) {
+        $fname = $_POST["fname"];
+        $lname = $_POST["lname"];
+        $filename = "../../data/guestbook.txt";
+        umask(0007);
+        $dir = "../../data/lab05";
         if (!file_exists($dir)) {
             mkdir($dir, 02770);
         }
@@ -22,19 +24,19 @@
             $lname = addslashes($lname);
             $data = $fname . "," . $lname . "\r\n";
             if (fwrite($handle, $data) === false) {
-                echo"<p>Cannot add your name to the Guest book</p>";
+                echo "<p>Cannot add your name to the Guest book</p>";
             } else {
-                echo"<p>Thank you for signing the Guest book</p>";
+                echo "<p>Thank you for signing the Guest book</p>";
             }
             fclose($handle);
         } else {
-            echo"<p>Cannot add your name to the Guest book</p>";
+            echo "<p>Cannot add your name to the Guest book</p>";
             fclose($handle);
         }
-        } else {
-            echo "<p>You must enter your first and last name!</p>";
-            echo "<p>Use the Browser's 'Go Back' button to return to the Guestbook form.</p>";
-        }
+    } else {
+        echo "<p>You must enter your first and last name!</p>";
+        echo "<p>Use the Browser's 'Go Back' button to return to the Guestbook form.</p>";
+    }
     ?>
     <a href="guestbookshow.php">Show Guest Book</a>
 </body>
