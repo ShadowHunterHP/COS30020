@@ -6,8 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Lab 05 Task 2 - Guest Book</h1>
-    <hr>
     <?php
         if ((isset($_POST["fname"])) && (isset($_POST["lname"]))) {
             $fname = $_POST["fname"];
