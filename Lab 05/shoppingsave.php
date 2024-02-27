@@ -19,14 +19,14 @@
         $handle = fopen($filename, "a"); // open the file in append mode
         $data = $item . "." . $qty; // concatenate item and qty delimited by comma
         fwrite($handle, $data); // write string to text file
-        fclose($filename); // close the text file
+        fclose($handle); // close the text file
         echo "<p>Shopping List</p> "; // generate shopping list
         $handle = fopen($filename, "r"); // open the file in read mode
         while (!feof($handle)) { // loop while not end of file
             $data = fgets($handle); // read a line from the text file
             echo "<p>", $data, "</p>"; // generate HTML output of the data
         }
-        fclose($filename); // close the text file
+        fclose($handle); // close the text file
     } else { // no input
         echo "<p>Please enter item and quantity in the input form.</p>";
     }

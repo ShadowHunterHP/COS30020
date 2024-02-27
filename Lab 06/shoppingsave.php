@@ -26,7 +26,7 @@
     $itemdata[] = $data [0]; // create a string element
     }
     }
-    fclose ($filename); // close the text file
+    fclose ($handle); // close the text file
     $newdata = !(in_array($item, $itemdata)); // check if item exists in array
 
     } else {
@@ -35,8 +35,8 @@
     if ($newdata) {
     $handle = fopen($filename, "a"); // open the file in append mode
     $data = $item . "," . $qty . "\n"; // concatenate item and qty delimite by comma
-    fputs($filename, $data); // write string to text file
-    fclose ($filename); // close the text file
+    fputs($handle, $data); // write string to text file
+    fclose ($handle); // close the text file
 
     $alldata [] = array($item, $qty); // add data to array
 
