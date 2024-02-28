@@ -17,7 +17,7 @@
         $qty = $_POST["number"]; // obtain the form quantity data
         $filename = "../../data/shop.txt"; // assumes php file is inside lab05
         $handle = fopen($filename, "a"); // open the file in append mode
-        $data = $item . "." . $qty; // concatenate item and qty delimited by comma
+        $data = $item . "." . $qty . "\n"; // concatenate item and qty delimited by comma
         fwrite($handle, $data); // write string to text file
         fclose($handle); // close the text file
         echo "<p>Shopping List</p> "; // generate shopping list
