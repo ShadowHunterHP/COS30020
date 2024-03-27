@@ -21,7 +21,7 @@
 
 		<input type="submit" value="Set Up">
 	</form>
-	
+
 <?php
 	$host = "feenix-mariadb.swin.edu.au";
 	$tbnm = "hitcounter";
@@ -50,12 +50,12 @@
 			$value5 = var_export($tbnm, true);
 			$val = "<?php\n\$host = $value1;\n\$user = $value2;\n\$pswd = $value3;\n\$dbnm = $value4;\n\$tbnm = $value5;\n?>";
 			file_put_contents($filename, $val);
-			
+
 			$conn = @mysqli_connect($host, $user, $pswd, $dbnm);
 			if (!$conn) {
 				echo "<h2>The database is not working as intended :< </h2>";
 			} else {
-				$create = "CREATE TABLE IF NOT EXISTS `hitcounter` (`id` SMALLINT NOT NULL PRIMARY KEY, 
+				$create = "CREATE TABLE IF NOT EXISTS `hitcounter` (`id` SMALLINT NOT NULL PRIMARY KEY,
 																	  `hits` SMALLINT NOT NULL);";
 				$hit_table = mysqli_query($conn, $create);
 				$insert = "INSERT INTO `hitcounter` VALUES (1,0);";
