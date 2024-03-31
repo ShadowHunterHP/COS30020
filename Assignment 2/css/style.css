@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: #727272;
+    background-image: repeating-linear-gradient(-45deg, #6a6a6a 0, #6a6a6a 2px, #727272 2px, #727272 11px);
+    background-size: 16px 16px;
+    font-size: 1rem;
+}
+
+.real-body {
+    background-color: white;
+    margin: 2%;
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.real-body h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:link,
+a:visited,
+button {
+    background-color: #e01313;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    opacity: 0.85;
+}
+
+nav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .7);
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+    position: relative;
+}
+
+nav div {
+    position: relative;
+    margin: 0 20px;
+    list-style: none;
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding: 13px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%; 
+    text-align: center;
+    border-collapse:collapse;
+    border-color: black;
+}
+
+#add-friend-btn {
+    width: 100%;
+    cursor: pointer;
+}
+
+.container2 {
+    position: relative;
+    display: flex;
+}
+
+#previous-btn, #next-btn {
+    background-color: rgb(13, 52, 110);
+    position: relative;
+    display: flex;
+}
+
+#previous-btn {
+    float: left;
+}
+
+#next-btn {
+    float: right;
+}
+
+.container3 {
+	display: block;
+	text-align: center;
+}
+
+img {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
