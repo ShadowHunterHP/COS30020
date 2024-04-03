@@ -11,14 +11,14 @@ if (empty($_GET['first_name']) || empty($_GET['last_name']))
 	die("<p>You must enter your first and last name! Click your browser's Back button to return to the Guest Book form.</p>");
 
 // select database
-$DBConnect = @mysqli_connect("localhost", "dongosselin", "rosebud")
+$DBConnect = @mysqli_connect("localhost", "root", "")
 	Or die("<p>Unable to connect to the database server.</p>"
 	. "<p>Error code " . mysqli_connect_errno()
 	. ": " . mysqli_connect_error()) . "</p>";
 
 // select and create database
 $DBName = "guestbook";
-if (!@mysqli_select_db($DBConn, $DBName)) {
+if (!@mysqli_select_db($DBConnect, $DBName)) {
 	//Wrong SQL string
 	$SQLstring = 'CREATE DATABASE ' . $DBName;
 	$QueryResult = @mysqli_query($DBConnect, $SQLstring)
@@ -32,7 +32,7 @@ if (!@mysqli_select_db($DBConn, $DBName)) {
 $TableName = "visitors";
 $SQLstring = "SELECT * FROM $TableName";
 $QueryResult = @mysqli_query($DBConnect, $SQLstring);
-if ($QueryResult) {
+if (!$QueryResult) {
  	$SQLstring = "CREATE TABLE $TableName (countID SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY, last_name VARCHAR(40), first_name VARCHAR(40))";
  	$QueryResult = @mysqli_query($DBConnect, $SQLstring)
  		Or die("<p>Unable to create the table.</p>"
